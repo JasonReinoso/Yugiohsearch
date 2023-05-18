@@ -1,0 +1,537 @@
+html{
+  height:100vh;
+  width:100vw;
+}
+
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left:0;
+  border: 0;
+  overflow: hidden;
+  display: flex;
+  margin: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  text-align: center;
+  display:flex; 
+  align-items: space-between; 
+  justify-content: space-between; 
+  flex-direction: column;
+  position: fixed;
+  bottom:0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background-image:  linear-gradient(79deg,#BF40BF,	#702963,	#483248);
+}
+
+/* The start of yugi search title of app zzzzz */
+.title{
+  color:cyan;
+  display:block;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  height: fit-content;
+}
+
+/* The end of yugi search title of app zzzzz */
+
+/* THIS IS START OF SIGNIN.JSX CSS */
+
+#sign-in-page{
+  margin: auto;
+}
+
+.sign-in-container, .Signin, .signup{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+}
+
+.sign-in-container{
+  padding: 5rem;
+  border:1px solid #09203F;
+  border-radius: 10px;
+  background-image: linear-gradient(79deg,#09203F,#537895);
+  align-self: center;
+}
+
+.warning{
+  padding:8px;
+  color:white;
+  border-radius: 10px;
+ 
+ background-color: #cd5c5c;
+}
+
+.Loginlabel2{
+  color:#B2D2F5;
+}
+
+.Loginlabel{
+  text-align: left;
+  padding: .25rem 0;
+  color:#B2D2F5;
+}
+
+.InputLogin{
+  margin:0.5rem 0;
+}
+
+.Banlistbuttons button{
+  font: 100%;
+  min-height: 20%;
+}
+
+.ButtonLogin{
+  border:none;
+  background-color:none;
+  text-decoration: underline;
+  background-image: linear-gradient(79deg,green, #5DBB63 );
+  padding: 10px;
+  border-radius: 10px;
+  color:WHITE;
+  cursor: pointer;
+}
+
+.ButtonSignup{
+  border:none;
+  background-color:rgb(0, 123, 164);;
+  text-decoration: underline;
+  padding: 10px;
+  border-radius: 10px;
+  color:WHITE;
+  cursor: pointer;
+}
+
+.Link{
+  
+  color:#B2D2F5;
+}
+
+.Link:hover{
+  color:red;
+}
+
+/* .Cardrow ul{
+  columns:4;
+}
+.Cardrow li {
+  display: inline-block;
+  
+} */
+
+#search-btns{
+  display: flex;
+  flex-direction: column;
+}
+
+.rowscroll{
+  height: 550px;
+  overflow: hidden;
+  overflow-y: scroll;
+  flex-shrink: 0;
+}
+
+.Allrows{
+  display:flex;
+  list-style-type:none;
+  padding: 2px;
+  overflow: hidden;
+ 
+ 
+}
+
+.columns{
+  padding: 15px;
+  list-style-type: none;
+}
+
+.columns:hover{
+  box-shadow: 0px 0px 11px #fff;
+}
+
+.decklist-columns{
+  padding: 5px;
+  list-style-type: none;
+}
+
+#app-container{
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color:#537895;
+}
+
+#edit-deck{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 2%;
+}
+
+hr{
+  width: 100%;
+}
+
+.cardline2{
+  display: block;
+  margin-bottom: 130%;
+  border-color: #000;
+}
+
+#empty-card{
+  height:274px;
+  width:199px;
+  border:1px solid #000;
+  background-color: #000;
+}
+
+.formatmaster{
+  width: 1000px;
+  border: solid white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formatmaster-btns{
+  display: flex;
+  flex-direction: column;
+}
+
+.formatmaster button{
+  height: 20px;
+  width: 300px;
+}
+
+#main-and-extra-decks{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main-deck{
+  width: 100%;
+}
+
+#extra-deck{
+  width: 100%;
+}
+
+.Cardinfo{
+  color:black;
+  width: 300px;
+}
+
+.Search, .Cardinfo, .formatmaster {
+  height: 100%;
+}
+
+.Search{
+  border-style:solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Search button, 
+.Search select,
+.Search input{
+  width: 300px;
+}
+
+.cardborder{
+  color: black;
+  height: 100%;
+  border:solid;
+  text-align: center;
+  white-space: normal;
+  max-width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardline{
+  border-color:black;
+  width: 100%;
+}
+
+#card-data{
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-data-list{
+  overflow-y: auto;
+}
+
+.CardDesc{
+ color:black;
+ list-style-type: none; /* i just added this -jason */
+}
+
+#menu-container{
+  display: flex;
+  min-height: fit-content;
+  width: 100%;
+  background-color: aliceblue;
+  flex-grow: 0;
+}
+
+.Menu {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+}
+
+.Menuitem{
+  float:left;
+  color:black;
+  width: 200px;
+}
+
+.Menuitem a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration: none;
+}
+
+.Menuitem :hover{
+  color:red;
+}
+
+.Createdeck{
+  color:white;
+
+}
+
+.new-deck{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+  width: 500px;
+}
+
+#deck-container{
+  height: 70%;
+  width: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.Alldecks{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.deck-name{
+  background-color: #5DBB63;
+  height: 40px;
+  width: 250px;
+  margin: 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.deck-name a{
+  text-decoration: none;
+}
+
+.deck-name :hover{
+  color: #537895;
+}
+
+.masterban{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 75%;
+  width: fit-content;
+  /* padding: 0 0 15% 0; */
+}
+
+
+.Banlistbuttons{ 
+  min-height: fit-content;
+  margin-bottom: 3%;
+}
+
+.ban-btn{
+  height: 30px;
+  width: 100px;
+}
+
+.ban-btn-pressed{
+  height: 30px;
+  width: 100px;
+  color:black;
+  background-color: orange;
+}
+
+.banlistgrid{
+  height: 75%;
+  overflow-y: auto;
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+
+
+.rowbanlist{
+  display:flex;
+  /* list-style-type:none;
+  padding: 2px;
+  overflow: hidden; */
+}
+
+
+.test{
+  display:flex;
+  align-items: center;
+  top:50%;
+  left:50%;
+}
+
+/* Price History styles */
+
+#price-history{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+#price-history .Search{
+  width: fit-content;
+}
+
+#results-and-table{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* End of Price History styles */
+
+#graph-container{
+  height: 100%;
+  width: 100%;
+}
+
+.table4graph{
+  display:flex;
+  align-items: center;
+  overflow-y: auto;
+  overflow: auto;
+  color:#000;
+}
+
+.table4graph .popup-inner {
+  width: 800px;
+} 
+
+table{
+border-collapse:collapse;
+border:3px solid black;
+background-color: aliceblue;
+overflow-y: auto;
+}
+
+table td{
+border:2px solid #537895;
+}
+
+
+table:hover{
+  cursor: pointer;
+  
+}
+
+tr:hover{
+ color:darkgoldenrod; 
+}
+
+
+ul {
+  list-style-type: none; /* i just added this -jason */
+}
+
+li
+{
+  list-style-type: none; /* i just added this -jason */
+}
+
+.sweethome{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
